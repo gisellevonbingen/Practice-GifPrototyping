@@ -90,6 +90,9 @@ namespace GIFPrototyping
                             var lctBitDepth = lctInfo[BitVector32.CreateSection(0x07)] + 1;
                             var lct = lctPresent ? processor.ReadBytes((1 << lctBitDepth) * 3) : new byte[0];
                             var minimumLZWCodeSize = processor.ReadByte();
+
+                            // Implementing yet
+
                             Console.WriteLine($"localColorTable : {lctInfo}, minimumLZWCodeSize : {minimumLZWCodeSize}");
                             var p = new LZWProcessor(minimumLZWCodeSize, 2);
 

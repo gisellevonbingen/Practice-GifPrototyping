@@ -1,4 +1,4 @@
-# Exif
+# GIF Prototyping
 Study solution about gif file format
 
 ## References
